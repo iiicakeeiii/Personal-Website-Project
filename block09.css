@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    text-align: end;
+    border-bottom: solid saddlebrown 10px;
+}
+
+a {
+    color: sandybrown;
+}
