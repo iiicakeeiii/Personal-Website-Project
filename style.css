@@ -5,6 +5,11 @@ a {
 a:hover {
   color: gold;
 }
+nav {
+  z-index: 99;
+  background-color: rgb(15, 18, 25);
+  height: 2rem;
+}
 
 body {
   width: 100%;
@@ -25,8 +30,17 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow: hidden;
 }
 
+.p-layers {
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid white 2px;
+
+}
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -34,30 +48,45 @@ main {
 
 .circle1 {
   background-color: aliceblue;
-  width: 500px;
-  height: 500px;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
   position: absolute;
-  z-index: -1;
-  top: 120px;
-  left: 300px;
+  z-index: -10;
+  top: 12rem;
+  left: 2rem;
 }
 
 .circle2 {
   background-color: rgba(244, 164, 96, 90%);
-  width: 150px;
-  height: 150px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   align-self: flex-end;
   position: absolute;
+  z-index: -5;
 }
 
 .circle3 {
-  background-color: antiquewhite;
-  width: 150px;
-  height: 150px;
+  background-color: rgba(250, 235, 215, 50%);
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
-  align-self: self-start;
+  position: absolute;
+  justify-self: end;
+  align-self: flex-end;
+  z-index: 150;
+}
+
+.circle4 {
+  background-color: rgba(244, 96, 96, 90%);
+  width: 40rem;
+  height: 40rem;
+  border-radius: 10% ;
+  position: absolute;
+  justify-self: end;
+  align-self: flex-end;
+  z-index: -55;
 }
 
 .profile-container {
