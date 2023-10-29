@@ -49,6 +49,11 @@ body {
   align-self: self-start;
 }
 
+label {
+  display: block;
+  margin: 0.5rem 0;
+
+}
 #profile-about {
   width: 150px;
   height: 150px;
