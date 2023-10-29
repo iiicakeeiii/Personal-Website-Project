@@ -1,3 +1,11 @@
+a {
+  color: sandybrown;
+}
+
+a:hover {
+  color: gold;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -6,19 +14,22 @@ body {
   color: aliceblue;
   font-family: "Courier New", Courier, monospace;
 }
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;
-}
-
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#profile-index {
-  width: 500px;
-  height: 500px;
 }
 
 .circle1 {
@@ -33,7 +44,7 @@ body {
 }
 
 .circle2 {
-  background-color: sandybrown;
+  background-color: rgba(244, 164, 96, 90%);
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -49,11 +60,16 @@ body {
   align-self: self-start;
 }
 
-label {
-  display: block;
-  margin: 0.5rem 0;
-
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+#profile-index {
+  width: 500px;
+  height: 500px;
+}
+
 #profile-about {
   width: 150px;
   height: 150px;
@@ -71,15 +87,9 @@ label {
   z-index: 99;
 }
 
-a {
-  color: sandybrown;
-}
-
-a:hover {
-  color: gold;
-}
-
 .proj-container {
-  display: flex;
-  justify-content: space-between;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 20px;
 }
